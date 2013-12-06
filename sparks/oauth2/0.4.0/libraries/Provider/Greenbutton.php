@@ -1,16 +1,14 @@
 <?php
 /**
- * OAuth Tumblr Provider
+ * OAuth GreenButton Provider
  *
- * Documents for implementing Tumblr OAuth can be found at
- * <http://tumblr.com/api>.
+ * Documents for implementing Ontario's Green Button API OAuth can be found at
+ * <http://greenbuttondata.ca>.
  *
- * [!!] This class does not implement the Tumblr API. It is only an
- * implementation of standard OAuth with Tumblr as the service provider.
  *
  * @package    OAuth
  * @category   Provider
- * @author     Fuel Development Team
+ * @author     Bianca Sayan
  */
 
 class OAuth2_Provider_Greenbutton extends OAuth2_Provider {
@@ -19,7 +17,6 @@ class OAuth2_Provider_Greenbutton extends OAuth2_Provider {
          */
         public $method = 'GET';
         public $access_method = 'POST';
-        //public $redirect_uri = base_url().'/greenbutton';
         /**
          * @var  string  scope separator, most use "," but some like Google are spaces
          */
